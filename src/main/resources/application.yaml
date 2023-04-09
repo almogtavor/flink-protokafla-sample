@@ -1,0 +1,13 @@
+spring:
+  flink:
+    checkpointing:
+      interval: 60000
+    jobmanager:
+      heap: 1024m
+    taskmanager:
+      heap: 1024m
+      numberOfTaskSlots: 1
+
+kafka:
+  bootstrap-servers: localhost:9093
+  topic: noga
